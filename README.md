@@ -94,7 +94,7 @@ An introduction Home Page containg two section Admin and Booking from passenger 
 
 	a. If user select “admin” section.
 	
-  b. If user goes to passenger side through registering all booking details.
+  	b. If user goes to passenger side through registering all booking details.
   
 2. Once a user select admin, it will prompt for admin email and admin password.
 
@@ -102,9 +102,9 @@ An introduction Home Page containg two section Admin and Booking from passenger 
 
 	a. Add Flights.
 	
-  b. Change Password.
+  	b. Change Password.
 	
-  c. Logout and go back to Home Page.
+  	c. Logout and go back to Home Page.
   
 4. A new window will be shown where admin can enter flight details.
 
