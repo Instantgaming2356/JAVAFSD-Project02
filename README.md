@@ -133,5 +133,6 @@ Technologies used in project:
 
 Run this as a Java Project
 
-```Right-Click on the project in Java IDE and run it as a server.
+```
+Right-Click on the project in Java IDE and run it as a server.
 ```
