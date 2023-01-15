@@ -9,6 +9,7 @@
 <meta charset="ISO-8859-1">
 <title>FLYAWAY.COM</title>
 </head>
+<style><%@include file="/WEB-INF/style.css"%></style>
 <body>
 	<h1 align="center">Flight Management</h1>
 	<h2 align="center">

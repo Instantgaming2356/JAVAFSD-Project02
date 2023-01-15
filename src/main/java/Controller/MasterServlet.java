@@ -26,7 +26,7 @@ public class MasterServlet extends HttpServlet {
 	private Passenger p;
 	private int num;
 	private String pd = null;
-	private int count, flag;
+	private int count;
 	private List<Passenger> list1;
 
 	private static final long serialVersionUID = 1L;
@@ -37,11 +37,10 @@ public class MasterServlet extends HttpServlet {
 		ob1 = new PassengerDAO();
 		pd = "admin";
 		count = 0;
-		flag = 0;
 		list1 = null;
 		
 	}
-	
+
 	public MasterServlet() {
 		count = 0;
 		list1 = null;
@@ -111,7 +110,7 @@ public class MasterServlet extends HttpServlet {
 
 	private void BookingDetails(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		List<Passenger> list = ob1.getAllDetails();
 		list1 = list;
 		request.setAttribute("list", list);
@@ -121,10 +120,11 @@ public class MasterServlet extends HttpServlet {
 	}
 
 	private void passengerInsertDetails(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		
+
 		if (count > num)
 			response.sendRedirect("HomePage.jsp");
 		else {
+
 			String fname = request.getParameter("fname");
 			String flname = request.getParameter("lname");
 			long contact = Long.parseLong(request.getParameter("contact"));
@@ -224,8 +224,7 @@ public class MasterServlet extends HttpServlet {
 		num = Integer.parseInt(request.getParameter("qty"));
 
 		List<Flight> list = ob1.getAllDetailsByOriginDate(origin, date, target);
-		// System.out.println(list);
-		// request.setAttribute("num", num);
+		count = 0;
 		request.setAttribute("Selectedlist", list);
 		RequestDispatcher rd = request.getRequestDispatcher("PassengerFlights.jsp");
 		rd.forward(request, response);
@@ -238,7 +237,6 @@ public class MasterServlet extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("fid"));
 		FlightDAO x = new FlightDAO();
 		f = x.getFlightById(id);
-		// request.setAttribute("num", num);
 		RequestDispatcher rd = request.getRequestDispatcher("booking");
 		rd.forward(request, response);
 
@@ -251,7 +249,6 @@ public class MasterServlet extends HttpServlet {
 			ob.relation(f, list1);
 			request.setAttribute("n", num);
 			request.setAttribute("f", f);
-			// request.setAttribute("p", p);
 			RequestDispatcher rd = request.getRequestDispatcher("SummaryPage.jsp");
 			rd.forward(request, response);
 		} else

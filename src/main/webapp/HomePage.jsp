@@ -6,7 +6,9 @@
 <meta charset="ISO-8859-1">
 <title>FLYAWAY.COM</title>
 </head>
+<style><%@include file="/WEB-INF/style.css"%></style>
 <body>
+	<br><br><br>
 	<div class="container" align="center">
 		<a href="AdminLogin.jsp">Admin</a> <br>
 		<br>

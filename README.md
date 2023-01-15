@@ -90,6 +90,10 @@ An introduction Home Page containg two section Admin and Booking from passenger 
 
 <img alt = "Home Screen" src = "https://github.com/Instantgaming2356/JAVAFSD-Project02/blob/master/Images/Screenshot%20(1618).png">
 
+This is New Image with Styling.
+
+<img alt = "Home Screen" src = "https://github.com/Instantgaming2356/JAVAFSD-Project02/blob/master/Images/Screenshot%20(1619).png">
+
 1. Two options in the home page.
 
 	a. If user select “admin” section.

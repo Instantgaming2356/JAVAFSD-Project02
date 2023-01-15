@@ -9,6 +9,7 @@
 <meta charset="ISO-8859-1">
 <title>FLYAWAY.COM</title>
 </head>
+<style><%@include file="/WEB-INF/style.css"%></style>
 <body>
 	<div align="center">
 		<c:if test="${f != null}">

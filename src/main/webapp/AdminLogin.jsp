@@ -5,6 +5,7 @@
 
 <!DOCTYPE html>
 <html>
+<style><%@include file="/WEB-INF/style.css"%></style>
 <head>
 <meta charset="ISO-8859-1">
 <title>FLYAWAY.COM</title>
